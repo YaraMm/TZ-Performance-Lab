@@ -60,13 +60,15 @@ namespace Task_2
             string v = string.Join(" ", args);
             string[] ab = v.Split();
 
-            string a = File.ReadAllText(ab[0]);
+
+
+            string c = File.ReadAllText(ab[0]);
             string b = File.ReadAllText(ab[1]);
 
-            a = a.Replace("\r\n", " ");
+            c = c.Replace("\r\n", " ");
             b = b.Replace("\r\n", " ");
 
-            Console.WriteLine(PointsCondition(a, b));
+            Console.WriteLine(PointsCondition(c, b));
         }
     }
 }
